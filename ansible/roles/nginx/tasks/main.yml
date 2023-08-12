@@ -1,3 +1,8 @@
 ---
-- name: instalando nginx
-- apt: name:nginx state=latest
+ - name: Instalando Nginx 
+   apt: name=nginx state=latest
+
+
+ - name: Copiando index.html
+   copy: src=index.html dest=/var/www/html
+     
